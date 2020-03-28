@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "Registration";
+    //Layout = null;
+}
+
+<h2>Registration</h2>
+
+<div class="well well-sm">
+    <div class="row">
+        <div class="col-md-3 mandatory"><label>Name</label></div>
+
+        <div class="col-md-3 mandatory"><label>Categories</label></div>
+        <div class="col-md-3 mandatory"><label>Mobile No</label></div>
+        <div class="col-md-3 mandatory"><label>Vehicle No </label></div>
+
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <select class="form-control input-sm" id="MemberMaster_VehicleType" name="MemberMaster.VehicleType" required="required">
+                <option selected="selected" value="0">Select</option>
+                <option value="2">2 Wheeler</option>
+                <option value="4">4 Wheeler</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <input type="datetime-local" value="03/28/2020" class="form-control input-sm hasDatepicker" id="MemberMaster_ValidUpTo" maxlength="10" name="MemberMaster.ValidUpTo" required="required">
+        </div>
+        <div class="col-md-3">
+            <input autofocus="true" class="form-control input-sm" id="MemberMaster_BlockNo" maxlength="50" name="MemberMaster.BlockNo" onpaste="return false" onkeypress="return blockSpecialChar(event)" required="required" type="text" value="">
+        </div>
+        <div class="col-md-3">
+            <input autofocus="true" class="form-control input-sm" id="MemberMaster_FlatNo" maxlength="50" name="MemberMaster.FlatNo" onpaste="return false" onkeypress="return blockSpecialChar(event)" required="required" type="text" value="">
+        </div>
+        <br>
+
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <u>Live Camera</u>
+        </div>
+        <div class="col-md-4">
+            <u>Captured Picture</u>
+        </div>
+        <div class="col-md-4">
+            &nbsp;
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4" id="webcam">
+        </div>
+        <div class="col-md-4">
+            <img id="imgCapture" style="visibility: hidden; width: 120px;height: 120px;border:dashed">
+        </div>
+        <div class="col-md-4">
+            <input type="button" value="Capture" onclick="Capture();">
+        </div>
+    </div>
+
+
+    <br>
+    <div class="row">
+        <div class="col-md-3">
+
+            <button class="btn btn-success btn-sm" type="button" data-toggle="tooltip" title="Add" onclick="return addMember();"><i class="fa fa-plus-square"></i></button>
+            <button class="btn btn-success btn-sm" type="button" data-toggle="tooltip" title="Reset" onclick="return resetForm();">Reset</button>
+
+        </div>
+    </div>
+</div>

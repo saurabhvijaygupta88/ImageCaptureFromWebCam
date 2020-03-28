@@ -30,6 +30,14 @@ namespace ImageCaptureFromWebCam.Controllers
 
 
         // GET: Home
+        public ActionResult Registration()
+        {
+            Session["CapturedImage"] = "";
+            return View();
+        }
+
+
+        // GET: Home
         public ActionResult CaptureImage()
         {
             Session["CapturedImage"] = "";

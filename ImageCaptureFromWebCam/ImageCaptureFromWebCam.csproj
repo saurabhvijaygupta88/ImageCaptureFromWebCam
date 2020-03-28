@@ -137,6 +137,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\WebCamScript.js" />
     <Content Include="Webcam_Plugin\jscam.swf" />
     <Content Include="Webcam_Plugin\jscam_canvas_only.swf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -167,6 +168,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\CaptureImage.cshtml" />
     <Content Include="Webcam_Plugin\Makefile" />
+    <Content Include="Views\Home\Registration.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
